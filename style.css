@@ -1,0 +1,461 @@
+:root{
+    --logo: #E0E0E0;
+    --bgcolor: #C9C9B6;
+    --square: #9F9F8F;
+    --footer: #333333;
+    --sidebar: #0A0A09;
+    --fontcolor: #848475;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+background-color: var(--bgcolor)!important;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 20vh;
+    background-color: white;
+}
+div.top1{
+    height: 50%;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+}
+header div.top1 img{
+    width: 10%;
+    margin-left: 3px;
+}
+header div.top{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    padding: 0% 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header div.top h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #9F9F8F;
+}
+#menu{
+    background-color: transparent;
+    color: #333333;
+    border: none;
+    font-size: 30px;
+}
+.offcanvas{
+    width: 30%!important;
+    background-color: var(--sidebar)!important;
+    color: white!important;
+}
+.offcanvas-header{
+    display: flex;
+    align-items: center!important;
+    justify-content: center!important;
+}
+header .offcanvas-header h5{
+    margin-top: 50px;
+}
+header .offcanvas-header .btn-close{
+    position: absolute;
+    right: -35px;
+    top: 25px;
+    background-color: #E0E0E0;
+}
+/* --------------Header end--------------- */
+
+/* ----------------body center start--------------------- */
+
+main{
+    background: var(--bgcolor); /* Pehla color */
+    background: linear-gradient(to right, var(--bgcolor) 44%, var(--square) 44%);
+    padding: 5% 5% 0px 5%; 
+    margin: 5% 10%;
+}
+main div.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+main div.picture img{
+    width: 100%;
+}
+main div.message{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    position: relative;
+    top: -145px;
+    left: -50px;
+}
+main div.message div.inside{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+main div.message div.inside div.items{
+    background-color: white;
+    padding: 50px 30px;
+    color: var(--fontcolor);
+}
+main div.message div.inside div.items h1 i{
+    font-size: 75px;
+}
+main div.message div.inside div.items h2{
+    margin: 30px 0px;
+}
+main div.message div.inside div.items p{
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 20px;    
+}
+main div.message div.inside div.items a{
+    text-decoration: none;
+    color: var(--fontcolor);
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid var(--fontcolor);
+}
+main div.lastline{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -130px;
+    left: -45px;
+}
+main div.lastline span a{
+    text-decoration: none;
+    color: var(--fontcolor);
+    border-bottom: 2px solid var(--fontcolor);
+    padding-top: 2px;
+}
+
+
+
+/* ----------------body center end--------------------- */
+
+/* -----------------footer start-------------- */
+footer{
+    background-color: var(--footer);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+    bottom: 0px
+}
+footer > div.footer, div.copywrite{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > div.footer > p{
+    color: white!important;
+    text-align: center;
+}
+footer > div.copywrite p{
+    color: white;
+}
+div.copywrite a{
+    color: var(--bgcolor)!important;
+} 
+
+/* ----------------footer end--------------- */
+
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+  
+header{
+    height: 20vh!important;
+    width: 100vw!important;
+}
+div.top1{
+    height: 50%;
+    width: 100%;
+}
+header div.top1 img{
+    width: 40%;
+    margin-left: 3px;
+}
+header div.top{
+    width: 100%;
+    height: 50%;
+}
+header .offcanvas{
+    width: 80%!important;
+}
+header .offcanvas-header h5{
+    margin-top: 0px;
+}
+/* --------------Header end--------------- */
+
+/* ----------------body center start--------------------- */
+
+main{
+    background: var(--bgcolor); /* Pehla color */
+    background: linear-gradient(to right, var(--bgcolor) 25%, var(--square) 25%);
+    padding: 8% 8% 0px 2%; 
+    margin: 10% 10%;
+}
+main div.message{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -35px;
+    left: 0px;
+}
+main div.message div.inside{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+main div.message div.inside div.items{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+main div.message div.inside div.items h1 i{
+    font-size: 35px;
+}
+main div.message div.inside div.items h2{
+    margin: 10px 0px;
+}
+main div.message div.inside div.items p{
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 15px;    
+}
+main div.message div.inside div.items a{
+    text-decoration: none;
+    font-size: 15px;
+}
+main div.lastline{
+    position: relative;
+    top: 30px;
+    left: 0px;
+}
+
+/* ----------------body center end--------------------- */
+
+/* -----------------footer start-------------- */
+footer{
+    width: 100%;
+}
+footer > div.footer, footer div.copywrite{
+    width: 80%;
+}
+/* ----------------footer end--------------- */
+
+    
+  }
+  
+  /* Phablets and Small Tablets */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Your styles for phablets and small tablets here */
+    header{
+        height: 20vh!important;
+        width: 100vw!important;
+    }
+    div.top1{
+        height: 50%;
+        width: 100%;
+    }
+    header div.top1 img{
+        width: 40%;
+        margin-left: 3px;
+    }
+    header div.top{
+        width: 100%;
+        height: 50%;
+    }
+    header .offcanvas{
+        width: 80%!important;
+    }
+    header .offcanvas-header h5{
+        margin-top: 0px;
+    }
+    /* --------------Header end--------------- */
+    
+    /* ----------------body center start--------------------- */
+    
+    main{
+        background: var(--bgcolor); /* Pehla color */
+        background: linear-gradient(to right, var(--bgcolor) 25%, var(--square) 25%);
+        padding: 8% 8% 0px 2%; 
+        margin: 10% 10%;
+    }
+    main div.message{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -35px;
+        left: 0px;
+    }
+    main div.message div.inside{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+    main div.message div.inside div.items{
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    main div.message div.inside div.items h1 i{
+        font-size: 35px;
+    }
+    main div.message div.inside div.items h2{
+        margin: 10px 0px;
+    }
+    main div.message div.inside div.items p{
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 15px;    
+    }
+    main div.message div.inside div.items a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    main div.lastline{
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+    
+    /* ----------------body center end--------------------- */
+    
+    /* -----------------footer start-------------- */
+    footer{
+        width: 100%;
+    }
+    footer > div.footer, footer div.copywrite{
+        width: 80%;
+    }
+    /* ----------------footer end--------------- */
+    
+    
+}
+  
+  /* Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Your tablet styles here */
+    header{
+        height: 20vh!important;
+        width: 100vw!important;
+    }
+    div.top1{
+        height: 50%;
+        width: 100%;
+    }
+    header div.top1 img{
+        width: 40%;
+        margin-left: 3px;
+    }
+    header div.top{
+        width: 100%;
+        height: 50%;
+    }
+    header .offcanvas{
+        width: 80%!important;
+    }
+    header .offcanvas-header h5{
+        margin-top: 0px;
+    }
+    /* --------------Header end--------------- */
+    
+    /* ----------------body center start--------------------- */
+    
+    main{
+        background: var(--bgcolor); /* Pehla color */
+        background: linear-gradient(to right, var(--bgcolor) 25%, var(--square) 25%);
+        padding: 8% 8% 0px 2%; 
+        margin: 10% 10%;
+    }
+    main div.message{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -35px;
+        left: 0px;
+    }
+    main div.message div.inside{
+        display: flex;
+        width: 90%;
+        flex-direction: row!important;
+        flex-wrap: wrap!important;
+        flex-basis: 300px;
+    }
+    main div.message div.inside div.items{
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    main div.message div.inside div.items h1 i{
+        font-size: 35px;
+    }
+    main div.message div.inside div.items h2{
+        margin: 10px 0px;
+    }
+    main div.message div.inside div.items p{
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 15px;    
+    }
+    main div.message div.inside div.items a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    main div.lastline{
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+    
+    /* ----------------body center end--------------------- */
+    
+    /* -----------------footer start-------------- */
+    footer{
+        width: 100%;
+    }
+    footer > div.footer, footer div.copywrite{
+        width: 80%;
+    }
+    /* ----------------footer end--------------- */
+    
+    
+  }
+  
+  /* Laptops and Desktops */
+  @media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    /* Your laptop styles here */
+  }
+  
+  /* Large Screens and High-Resolution Displays */
+  @media only screen and (min-width: 1367px) {
+    /* Your styles for large screens here */
+  }
+  
+  /* Extra Large Screens - TVs and Other Large Displays */
+  @media only screen and (min-width: 1920px) {
+    /* Your styles for extra large screens here */
+  }
+  
